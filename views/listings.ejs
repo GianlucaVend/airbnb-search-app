@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>One Listing</h1>
+
+    <table class="table">
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Bedrooms</th>
+            <th>Country</th>
+            <th>Summary</th>
+            <th>Desc</th>
+        </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img src="<%= listings.images.picture_url %>" alt="">
+                    </div>
+                </td>
+                <td><%= listings.name %></td>
+                <td><%= listings.bedrooms %></td>
+                <td><%= listings.address.country_code %></td>
+                <td><%= listings.summary %></td>
+                <td><%= listings.description %></td>
+            </tr>
+    </table>
+
+  <!-- loops through an array of listings for reviews -->
+    <h2>Reviews</h2>
+    <ul>
+        <% listings.reviews.forEach((listing)=>{ %>
+            <li> 
+                <h6><strong><%= listing.date %></strong></h6>
+                <br> 
+                <h4><%= listing.reviewer_name %></h4>
+                <br>
+                <p><%= listing.comments %></p>
+            </li>
+        <%  })%>
+    </ul>
+</body>
+</html>

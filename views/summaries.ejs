@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Airbnb Summaries</title>
+</head>
+<body>
+
+    <h1>Listing Summaries</h1>
+
+    <table class="table">
+        <tr>
+            <th>Images</th>
+            <th>ID </th>
+            <th>Name </th>
+            <th>Bedrooms</th>
+            <th>Summary</th>
+            <th>Desc</th>
+        </tr>
+        
+        <!-- Loops through an array to display many listings -->
+        <%   listings.forEach(listing=>{ %>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img src="<%= listing.images.picture_url %>" alt="">
+                    </div>
+                </td>
+                <td>
+                    <a href="/airbnb/find-many/<%= listing._id %>">
+                        <%= listing._id %> 
+                    </a>
+                </td>
+                <td><%= listing.name %></td>
+                <td><%= listing.bedrooms %></td>
+                <td><%= listing.summary %></td>
+                <td><%= listing.description %></td>
+            </tr>
+        <% }) %> 
+    </table>
+</body>
+</html>

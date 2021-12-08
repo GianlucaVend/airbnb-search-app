@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+  </head>
+  <body>
+    
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><%= title %></h1>
+    <p class="lead">By Gianluca Venditti</p>
+  </div>
+</div>
+
+    <h1>One Listing</h1>
+    <form action="/airbnb/find-one">
+      <label for="bedrooms">Minimum number of bedrooms: </label>
+      <input type="text" id="bedrooms" name="bedrooms" value="1">
+      <br>
+      <br>
+      <label for="beds">Number of beds:</label>
+      <input type="text" id="beds" name="beds" value="1">
+      <br>
+      <br>
+      <label for="reviews">Number of reviews: </label>
+      <input type="text" id="reviews" name="reviews" value="1">
+      <br>
+      <br>
+      <label for="country">Country: </label>
+      <input type="text" id="country" name="country" value="Canada">
+      <br>
+      <br>
+      <h2>Amenities</h2>
+          <input type="checkbox" name="amenities[]" id="wifi" value="Wifi">
+          <label for="wifi">Wifi</label><br>
+          <input type="checkbox" name="amenities[]" id="pool" value="Pool">
+          <label for="pool">Swimming Pool</label><br>
+          <input type="checkbox" name="amenities[]" id="coffee-maker" value="Coffee maker">
+          <label for="coffee-maker">Coffee maker</label>
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <br>
+
+    <h1>Many listings</h1>
+    <form action="/airbnb/find-many">
+      <label for="bedrooms">Minimum number of bedrooms</label>
+      <input type="text" id="bedrooms" name="bedrooms" value="2">
+
+      <label for="country">Countrys: </label>
+          <select name="country" id="country" required>
+            <option value="United States">United States</option>
+            <option value="Australia">Australia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Canada">Canada</option>
+            <option value="Spain">Spain</option>
+            <option value="China">China</option>
+            <option value="Hong Kong">Hong Kong</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Turkey">Turkey</option>
+          </select>
+      
+          <h2>Select Number of Listings</h2>
+            <label for="n_listings">Number of listings</label>
+            <input type="text" id="n_listings" name="n_listings" value="1">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
