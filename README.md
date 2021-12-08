@@ -21,7 +21,7 @@
 <h3 align="center">Node.js web application</h3>
 
   <p align="center">
-    The purpose of this project was to design and implement classes for a shipping company that delivers boxes and letters to its customers.
+   Node.js web application that queries the Mongodb Airbnb database, allowing users to find listings by entering search criteria via the user interface.
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -57,8 +57,6 @@
 
 [![Product Name Screen Shot][product-screenshot2]]()
 
-
-[![Product Name Screen Shot][product-screenshot3]]()
 
 
 <!--
@@ -221,5 +219,5 @@ Visit My Portfolio:[Here](https://gianlucavenditti.com/)
 [twitter-url]: https://twitter.com/GianlucaVend
 [insta-url]: https://www.instagram.com/gianlucavend/
 [product-screenshot]: images/class.png
-[product-screenshot2]: images/program1.png
-[product-screenshot3]: images/program2.png
+[product-screenshot2]: images/airbnb2.png
+[product-screenshot3]: images/airbnb.png
