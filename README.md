@@ -18,7 +18,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Shipping Company Program</h3>
+<h3 align="center">Node.js web application</h3>
 
   <p align="center">
     The purpose of this project was to design and implement classes for a shipping company that delivers boxes and letters to its customers.
