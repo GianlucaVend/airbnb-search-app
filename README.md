@@ -132,13 +132,15 @@ _For more examples, please refer to the [Documentation](https://docs.djangoproje
 
 <!-- ROADMAP -->
 ## Roadmap 
--  Class inheritance 
-- Polymorphism
-- Destructors
-- Pointers 
-- Dynamic memory 
-- Stack vs Heap or complie time vs runtime memory 
-- Creating objects on the heap and the stack
+- findListing(response, criteria) – finds a single complete listing that matches the criteria
+parameter object,
+- findListings(response, criteria, projection, nListings) – finds multiple (nListings) partial listings
+that match the criteria object and returns only the fields specified by the projection object.
+For testing purposes, the criteria and projection objects have been hardcoded in the airbnb router.
+The application also has an index.ejs file that displays two forms. One sends a get request to a path
+that calls findListing, the other sends a GET request to a path that calls findListings. Each form has a
+single textbox input allowing the user to specify the minimum number of bedrooms required in the
+airbnb listing. 
 
 
 <!--
