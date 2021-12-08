@@ -218,6 +218,6 @@ Visit My Portfolio:[Here](https://gianlucavenditti.com/)
 [linkedin-url]: https://www.linkedin.com/in/gianlucavenditti-/
 [twitter-url]: https://twitter.com/GianlucaVend
 [insta-url]: https://www.instagram.com/gianlucavend/
-[product-screenshot]: images/class.png
 [product-screenshot2]: images/airbnb2.png
-[product-screenshot3]: images/airbnb.png
+[product-screenshot]:  images/airbnb.png
+
