@@ -123,7 +123,7 @@ This is an example of how to list things you need to use the software and how to
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-To allow a shipping company to track deliveries to its customers.
+Node.js web application that queries the Mongodb Airbnb database, allowing users to find listings by entering search criteria via the user interface.
 
 
 _For more examples, please refer to the [Documentation](https://docs.djangoproject.com/en/3.2/)_
